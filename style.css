@@ -7,44 +7,95 @@
     align-items: center;
     padding: 20px;
 }
-.flex-item{
-    background:lightslategray;
+
+.flex-item {
+    background: lightslategray;
     width: 40px;
     min-height: 50px;
     border: 2px solid black;
     margin: 7px;
+    border-radius: 4px;
 }
 
-body{
-    background: url(https://images.unsplash.com/photo-1553375388-5917bf50a7ab?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8);
-    background-size: 150%;
-
+body {
+    margin: 0;
+    background: url(https://media.istockphoto.com/id/512329850/photo/gray-asphalt-texture-background.jpg?s=612x612&w=0&k=20&c=SkKSRl3dR6z-l_802Ssfzv_DsxXai81pgAsFDq02dTY=);
 }
-
-.flex-row{
-    display: flex;
-    justify-content: space-evenly;
-    background: rgb(157, 151, 151);
-    max-width: 200px;
-}
-.flex-row2{
-    display: flex;
-    justify-content: space-evenly;
-    background: rgb(157, 151, 151);
-    max-width: 200px;
+#sky {
     position: absolute;
-    right: 0;
+    top: 0;
+    width: 110%;
+    height: 90%;
+    background: linear-gradient(skyblue, lightblue);
+    z-index: -1;
+}
+
+
+.sun {
+    position: absolute;
+    right: 0px;
+    font-size: 110px;
+}
+
+.cloud {
+    position: absolute;
+    top: 60px;
+    font-size: 45px;
+}
+.cloud5 {
+    top: 0px;
+    left: 500px;
+}
 
 }
-.flex-row3{
+.cloud1 { 
+    top: 60px; 
+    left: 80px; }
+.cloud2 { 
+    top: 10px;
+    left: 300px; }
+.cloud3 { 
+    top: 50px; 
+    left: 420px; }
+.cloud4 { 
+    top: 0px; 
+    left: 70px; }
+
+.plane {
+    position: absolute;
+    font-size: 70px;
+}
+
+.plane1 { 
+    top: 40px;
+    left: 150px; }
+.plane2 { 
+    top: 9px; 
+    left: 50px; }
+.plane3 { 
+    top: 9px; 
+    left: 450px; }
+
+.flex-row,.flex-row2,.flex-row3 {
     display: flex;
     justify-content: space-evenly;
     background: rgb(157, 151, 151);
-    max-width: 200px;
+    width: 240px;
+    margin: 25px;
+    border: 3px solid black;
+    position: relative;
 }
 
 .building-container {
     display: flex;
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
+    width: 100%;
+}
+
+.person {
+    position: absolute;
+    font-size: 32px;
+    left: 100px;
 }
